@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#080808">
+  <title>TikTok Browser</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="topbar">
+    <a class="brand" href="./" aria-label="TikTok Browser home">
+      <span class="brand-mark">♪</span><span>TikTok <b>Browser</b></span>
+    </a>
+    <div class="status"><span class="dot"></span> TIKTOK ONLY</div>
+  </header>
+
+  <main class="shell">
+    <section class="hero">
+      <div class="eyebrow">YOUR SHORT-FORM VIDEO HUB</div>
+      <h1>One destination.<br><span>Endless discovery.</span></h1>
+      <p>A minimal, dedicated launcher for TikTok. Press the button to open TikTok in this tab.</p>
+      <button id="openTikTok" class="launch" type="button">
+        <span class="music-note">♪</span> Open TikTok <span class="arrow">↗</span>
+      </button>
+      <div class="fineprint">This static site opens TikTok directly. TikTok itself controls its content, sign-in, and navigation.</div>
+    </section>
+
+    <section class="preview" aria-label="TikTok destination">
+      <div class="preview-top">
+        <div class="window-dots"><i></i><i></i><i></i></div>
+        <div class="address"><span class="lock">●</span> tiktok.com</div>
+        <span class="external">↗</span>
+      </div>
+      <div class="preview-content">
+        <div class="tiktok-symbol">♪</div>
+        <div class="preview-title">TikTok</div>
+        <div class="preview-copy">Discover videos, creators, and trends.</div>
+        <button id="openTikTokSecondary" class="secondary" type="button">Continue to TikTok <span>↗</span></button>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <span>© <span id="year"></span> TikTok Browser</span>
+    <span>Independent launcher · Not affiliated with TikTok</span>
+  </footer>
+  <script src="app.js"></script>
+</body>
+</html>

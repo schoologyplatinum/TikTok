@@ -1,0 +1,42 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&display=swap');
+
+:root { color-scheme: dark; font-family: 'DM Sans', Arial, sans-serif; background:#080808; color:#f7f7f7; }
+* { box-sizing:border-box; }
+body { margin:0; min-height:100vh; background: radial-gradient(ellipse at 50% 35%, #201016 0%, #0b0b0d 42%, #080808 75%); }
+.topbar { height:76px; display:flex; align-items:center; justify-content:space-between; padding:0 clamp(22px,6vw,90px); border-bottom:1px solid #ffffff12; }
+.brand { display:flex; align-items:center; gap:11px; color:#fff; text-decoration:none; font-size:17px; font-weight:700; letter-spacing:-.5px; }
+.brand b { color:#a7a7ad; font-weight:500; }
+.brand-mark { display:grid; place-items:center; width:32px; height:32px; border-radius:10px; font-size:23px; font-weight:800; background:linear-gradient(135deg,#25f4ee 0 42%,#fe2c55 58% 100%); color:#080808; text-shadow:1px 1px #fff; }
+.status { font-size:10px; letter-spacing:1.5px; color:#aaa; font-weight:700; display:flex; align-items:center; gap:9px; }
+.dot { width:7px; height:7px; border-radius:50%; background:#25f4ee; box-shadow:0 0 12px #25f4ee88; }
+.shell { width:min(1100px,90vw); margin:0 auto; min-height:calc(100vh - 132px); display:grid; grid-template-columns:1.05fr .95fr; align-items:center; gap:7vw; padding:70px 0; }
+.eyebrow { color:#25d9d7; font-size:11px; font-weight:800; letter-spacing:2.5px; margin-bottom:22px; }
+h1 { font-size:clamp(42px,6vw,76px); line-height:1.02; letter-spacing:-4px; margin:0 0 24px; font-weight:800; }
+h1 span { color:#a4a4aa; }
+.hero p { color:#a5a5ab; font-size:16px; line-height:1.75; max-width:440px; margin:0 0 32px; }
+.launch { border:0; border-radius:12px; background:#fff; color:#080808; padding:16px 22px; min-width:205px; font:700 15px 'DM Sans',sans-serif; cursor:pointer; display:flex; align-items:center; justify-content:center; gap:12px; transition:transform .18s, box-shadow .18s; }
+.launch:hover { transform:translateY(-2px); box-shadow:0 10px 35px #25f4ee22,0 8px 30px #fe2c5522; }
+.music-note { font-size:23px; line-height:15px; }
+.arrow { font-size:19px; }
+.fineprint { color:#696970; font-size:11px; line-height:1.6; max-width:390px; margin-top:18px; }
+.preview { border:1px solid #ffffff1c; border-radius:20px; overflow:hidden; background:linear-gradient(145deg,#18181c,#101014); box-shadow:0 30px 100px #0009; min-height:390px; }
+.preview-top { height:49px; border-bottom:1px solid #ffffff12; display:flex; align-items:center; padding:0 17px; gap:16px; color:#777; }
+.window-dots { display:flex; gap:6px; }
+.window-dots i { width:7px; height:7px; border-radius:50%; background:#555; }
+.window-dots i:first-child { background:#fe5f57; } .window-dots i:nth-child(2) { background:#febc2e; } .window-dots i:nth-child(3) { background:#28c840; }
+.address { margin:auto; width:58%; background:#08080a; border:1px solid #ffffff10; border-radius:7px; text-align:center; padding:6px; font-size:11px; color:#bdbdc3; }
+.lock { color:#25d9d7; font-size:8px; margin-right:5px; }
+.external { font-size:16px; }
+.preview-content { min-height:340px; display:flex; flex-direction:column; justify-content:center; align-items:center; text-align:center; padding:35px; background:radial-gradient(circle at 50% 38%,#292027 0,#141216 42%,#101014 75%); }
+.tiktok-symbol { font-size:54px; line-height:1; color:#fff; text-shadow:-3px 0 #25f4ee,3px 0 #fe2c55; }
+.preview-title { font-size:30px; font-weight:800; letter-spacing:-1px; margin-top:10px; }
+.preview-copy { color:#96969d; font-size:13px; margin:9px 0 24px; }
+.secondary { color:#fff; background:#ffffff0c; border:1px solid #ffffff26; border-radius:9px; padding:12px 17px; font:600 12px 'DM Sans',sans-serif; cursor:pointer; }
+.secondary:hover { background:#ffffff18; }
+.secondary span { margin-left:12px; }
+footer { border-top:1px solid #ffffff10; min-height:56px; display:flex; align-items:center; justify-content:space-between; gap:15px; padding:12px clamp(22px,6vw,90px); color:#65656c; font-size:10px; letter-spacing:.2px; }
+@media (max-width:760px) {
+ .topbar { height:64px; } .shell { grid-template-columns:1fr; gap:42px; padding:58px 0 45px; }
+ h1 { letter-spacing:-2.5px; } .preview { min-height:330px; } .preview-content { min-height:280px; }
+ footer { flex-direction:column; justify-content:center; text-align:center; }
+}
